@@ -4,6 +4,8 @@ import { Montserrat, Inter, Rubik } from "next/font/google";
 import type { ReactNode } from "react";
 import Header from "@/components/layout/Header";
 import "./globals.css";
+import Footer from "@/components/layout/Footer";
+import MobileMenu from "@/components/layout/MobileMenu";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -36,6 +38,8 @@ export default function RootLayout({
       <body className="font-sans">
         <Header />
         {children}
+        <Footer />
+        <MobileMenu />
       </body>
     </html>
   );

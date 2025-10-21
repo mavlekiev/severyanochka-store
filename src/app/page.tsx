@@ -13,7 +13,8 @@ export default async function Home() {
   // ]);
 
   return (
-    <div className="container max-w-[1240px] mx-auto px-4">
+   <main className="flex-100">
+       <div className="container max-w-[1240px] mx-auto px-4">
       <nav className="flex items-center gap-4">
         <span>Главная</span>
         <ArrowRightIcon />
@@ -30,5 +31,6 @@ export default async function Home() {
         total={productsData.total}
       /> */}
     </div>
+   </main>
   );
 }
