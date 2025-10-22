@@ -36,10 +36,12 @@ export default function RootLayout({
       className={`${montserrat.variable} ${inter.variable} ${rubik.variable}`}
     >
       <body className="font-sans">
-        <Header />
-        {children}
-        <Footer />
-        <MobileMenu />
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+          <MobileMenu />
+        </div>
       </body>
     </html>
   );

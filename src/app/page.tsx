@@ -13,24 +13,24 @@ export default async function Home() {
   // ]);
 
   return (
-   <main className="flex-100">
-       <div className="container max-w-[1240px] mx-auto px-4">
-      <nav className="flex items-center gap-4">
-        <span>Главная</span>
-        <ArrowRightIcon />
-        <span className="text-grey-300">Поиск</span>
-      </nav>
-      <h1 className="font-bold text-2xl leading-relaxed">Поиск</h1>
+    <main className="flex-grow">
+      <div className="container max-w-[1240px] mx-auto px-4">
+        <nav className="flex items-center gap-4">
+          <span>Главная</span>
+          <ArrowRightIcon />
+          <span className="text-grey-300">Поиск</span>
+        </nav>
+        <h1 className="font-bold text-2xl leading-relaxed">Поиск</h1>
 
-      {/* Фильтрация по категориям */}
-      {/* <CategoryFilter categories={categoriesData} /> */}
+        {/* Фильтрация по категориям */}
+        {/* <CategoryFilter categories={categoriesData} /> */}
 
-      {/* Список товаров с поддержкой "Загрузить ещё" */}
-      {/* <ProductList
+        {/* Список товаров с поддержкой "Загрузить ещё" */}
+        {/* <ProductList
         initialProducts={productsData.products}
         total={productsData.total}
       /> */}
-    </div>
-   </main>
+      </div>
+    </main>
   );
 }

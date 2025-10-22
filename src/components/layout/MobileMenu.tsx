@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import ArrowDownIcon from "../ui/ArrowDownIcon";
 import CartIcon from "../ui/CartIcon";
 import BoxIcon from "../ui/BoxIcon";
 import HeartIcon from "../ui/HeartIcon";
@@ -12,7 +11,7 @@ import Logo from "../ui/Logo";
 export default function MobileMenu() {
   return (
     <section className="sm:hidden bg-white-100  sticky bottom-0 z-50">
-      <div className="container max-w-[1248px] mx-auto px-4 py-[6.5px]">
+      <div className="container max-w-[360px] mx-auto px-4 py-[6.5px]">
         <div className="flex items-center justify-between md:pr-6">
           <div className="flex items-center gap-[17px] md:gap-10">
             <nav className="flex items-center gap-4 md:gap-6">
