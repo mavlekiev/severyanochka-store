@@ -31,18 +31,23 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html
-      lang="ru"
-      className={`${montserrat.variable} ${inter.variable} ${rubik.variable}`}
-    >
-      <body className="font-sans">
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          {children}
-          <Footer />
-          <MobileMenu />
-        </div>
-      </body>
-    </html>
+    <>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <html
+        lang="ru"
+        className={`${montserrat.variable} ${inter.variable} ${rubik.variable}`}
+      >
+        <body className="font-sans">
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            {children}
+            <Footer />
+            <MobileMenu />
+          </div>
+        </body>
+      </html>
+    </>
   );
 }
