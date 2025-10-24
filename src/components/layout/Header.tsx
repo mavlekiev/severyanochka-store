@@ -50,7 +50,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/cart"
-                className={styleForLink}
+                className={`${styleForLink} relative`}
               >
                 <CartIcon />
                 <span className="absolute -top-1 -right-[-16] bg-orange-100 text-white-100 text-[10px] rounded-[40%] w-3 h-3 flex items-center justify-center">
