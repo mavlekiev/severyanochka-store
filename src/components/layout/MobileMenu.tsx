@@ -13,7 +13,7 @@ const styleForLink =
 export default function MobileMenu() {
   return (
     <section className="sm:hidden bg-white-100 sticky z-50">
-      <div className="container mx-auto px-4 py-[6.5px]">
+      <div className="container mx-auto px-4 py-[3px]">
         <div className="flex justify-center">
           <div className="flex gap-[23px]">
             <nav className="flex items-center gap-[23px]">
