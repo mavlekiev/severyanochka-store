@@ -37,9 +37,9 @@ export default function MobileMenu() {
                 Корзина
               </Link>
             </nav>
-            <div className="p-[5px]">
+            <div className="p-[5px] flex-shrink-0">
               <Image
-                className="rounded-full flex-shrink-0"
+                className="rounded-full"
                 src="/avatar.jpg"
                 alt="avatar"
                 width={40}

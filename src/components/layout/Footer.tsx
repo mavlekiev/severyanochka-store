@@ -33,19 +33,22 @@ export default function Footer() {
               <span>8 800 777 33 33</span>
             </a>
           </div>
-          <div className="flex items-center max-lg:items-start gap-10">
+          <div className="flex items-center max-lg:items-start lg:gap-10 md:gap-3">
             <Link className={`max-md:hidden ${styleForHover}`} href="/">
               <LogoForFooter />
             </Link>
 
-            <div className="flex flex-wrap items-center max-lg:max-w-[400px] max-sm:max-w-[320px] font-medium text-[12px] max-sm:text-[10px] leading-[1.5] lg:gap-10 md:gap-x-4 md:gap-y-2 gap-x-4 gap-y-2 max-sm:gap-4 md:items-center">
+            <div className="flex flex-wrap items-center justify-center max-sm:justify-start max-lg:max-w-[400px] max-sm:max-w-[320px] font-medium text-[12px] max-sm:text-[10px] leading-[1.5] lg:gap-10 md:gap-x-4 md:gap-y-2 gap-x-4 gap-y-2 max-sm:gap-4 md:items-center ">
               <a href="/about" className={styleForHover}>
                 О компании
               </a>
               <a href="/contacts" className={styleForHover}>
                 Контакты
               </a>
-              <a href="/vacancies" className={`max-lg:mr-28 max-md:mr-0 ${styleForHover}`}>
+              <a
+                href="/vacancies"
+                className={`max-lg:mr-28 max-md:mr-0 ${styleForHover}`}
+              >
                 Вакансии
               </a>
               <a href="/articles" className={styleForHover}>
