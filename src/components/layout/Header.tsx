@@ -9,7 +9,8 @@ import HeartIcon from "../ui/HeartIcon";
 import BurgerIcon from "../ui/BurgerIcon";
 import Logo from "../ui/Logo";
 
-const STYLE_FOR_LINK = "flex flex-col items-center gap-2 text-black-100 font-medium text-xs leading-[1.5] transition-all duration-300 ease-in-out hover:text-orange-100 group cursor-pointer";
+const STYLE_FOR_LINK =
+  "flex flex-col items-center gap-2 text-black-100 font-medium text-xs leading-[1.5] transition-all duration-300 ease-in-out hover:text-orange-100 group cursor-pointer";
 
 export default function Header() {
   return (
@@ -34,24 +35,15 @@ export default function Header() {
 
           <div className="hidden sm:flex items-center max-lg:gap-4 lg:gap-[35px]">
             <nav className="flex items-center max-lg:gap-4 lg:gap-6">
-              <Link
-                href="/favorites"
-                className={STYLE_FOR_LINK}
-              >
+              <Link href="/favorites" className={STYLE_FOR_LINK}>
                 <HeartIcon />
                 Избранное
               </Link>
-              <Link
-                href="/orders"
-                className={STYLE_FOR_LINK}
-              >
+              <Link href="/orders" className={STYLE_FOR_LINK}>
                 <BoxIcon />
                 Заказы
               </Link>
-              <Link
-                href="/cart"
-                className={`${STYLE_FOR_LINK} relative`}
-              >
+              <Link href="/cart" className={`${STYLE_FOR_LINK} relative`}>
                 <CartIcon />
                 <span className="absolute -top-1 -right-[-16] bg-orange-100 text-white-100 text-[10px] rounded-[40%] w-3 h-3 flex items-center justify-center">
                   1
