@@ -3,8 +3,9 @@ import Image from "next/image";
 import { formatPrice } from "@/utils/formatPrice";
 import HeartIcon from "../ui/HeartIcon";
 import RatingStars from "./RatingStars";
+import { Product } from "@/types/product";
 
-export default function ProductCard({ product }: { product: any }) {
+export default function ProductCard({ product }: { product: Product }) {
   const discountedPrice =
     product.price * (1 - product.discountPercentage / 100);
 

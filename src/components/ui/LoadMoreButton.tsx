@@ -10,9 +10,9 @@ export default function LoadMoreButton({
       <button
         onClick={onClick}
         disabled={loading}
-        className="border border-solid border-gray-200 rounded p-2 px-6 font-medium text-base leading-normal transition-all duration-300 ease-in-out hover:border-orange-100 disabled:opacity-50"
+        className="border border-solid border-gray-200 rounded p-2 px-6 font-medium text-base leading-normal transition-all duration-300 ease-in-out hover:border-orange-100 disabled:border-gray-200 disabled:text-gray-200"
       >
-        {loading ? "Загрузка..." : "Загрузить еще"}
+        Загрузить еще
       </button>
     </div>
   );

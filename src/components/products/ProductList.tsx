@@ -4,14 +4,16 @@ import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import LoadMoreButton from "../ui/LoadMoreButton";
 import { getProducts } from "@/lib/api";
+import { Product } from "@/types/product";
 
 export default function ProductList() {
-  const [products, setProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [skip, setSkip] = useState(0);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [total, setTotal] = useState(0);
   const [initialLimit, setInitialLimit] = useState(16);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const updateInitialLimit = () => {
@@ -39,7 +41,7 @@ export default function ProductList() {
         setSkip(data.products.length);
         setHasMore(data.products.length < data.total);
       } catch (err) {
-        console.error("Ошибка загрузки:", err);
+        setError("Не удалось загрузить товары. Попробуйте обновить страницу.");
       } finally {
         setLoading(false);
       }
@@ -58,14 +60,30 @@ export default function ProductList() {
       setSkip((prev) => prev + initialLimit);
       setHasMore(products.length + data.products.length < total);
     } catch (err) {
-      console.error("Ошибка загрузки:", err);
+      setError("Не удалось загрузить дополнительные товары.");
     } finally {
       setLoading(false);
     }
   };
 
+  if (error) {
+    return (
+      <div className="flex items-center justify-center py-10">
+        <div className="text-black-100 mb-4">{error}</div>
+        <button
+          onClick={() => window.location.reload()}
+          className="border border-solid border-gray-200 rounded p-2 px-6 font-medium text-base leading-normal transition-all duration-300 ease-in-out hover:border-orange-100"
+        >
+          Обновить страницу
+        </button>
+      </div>
+    );
+  }
+
   if (loading && products.length === 0) {
-    return <div>Загрузка...</div>;
+    return (
+      <div className="flex items-center justify-center p-10">Загрузка...</div>
+    );
   }
 
   return (
