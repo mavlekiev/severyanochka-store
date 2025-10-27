@@ -2,7 +2,7 @@
 
 Данный проект реализован в рамках тестового задания. 
 
-## Для полноценнjq работы API dummyjson.com может понадобиться VPN
+## Для полноценной работы API dummyjson.com может понадобиться VPN
 
 ### Деплой: https://severyanochka-store.vercel.app/
 
