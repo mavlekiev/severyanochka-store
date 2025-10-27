@@ -51,7 +51,7 @@ npm install
 # или
 yarn install
 
-
+### Деплой: [https://severyanochka-store.vercel.app/]
 
 
 
