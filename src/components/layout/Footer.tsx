@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Logo from "../ui/Logo";
 import PhoneIcon from "../ui/PhoneIcon";
 import InstagramIcon from "../ui/InstagramIcon";
 import VkontakteIcon from "../ui/VkontakteIcon";

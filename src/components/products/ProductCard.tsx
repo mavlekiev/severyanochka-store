@@ -54,7 +54,7 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.title}
           </h3>
 
-          <div className="flex-shrink-0">
+          <div className="flex-grow">
             <RatingStars rating={product.rating} />
           </div>
 

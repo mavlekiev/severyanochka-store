@@ -14,7 +14,7 @@ const STYLE_FOR_LINK =
 
 export default function Header() {
   return (
-    <header className="bg-white-100  sticky top-0 z-50 shadow-custom-shadow">
+    <header className="bg-white-100  sticky top-0 z-50 shadow-custom-shadow mb-2 sm:mb-4 lg:mb-6">
       <div className="container max-w-[1248px] mx-auto px-4 py-2 sm:px-5 sm:py-[11px] lg:pr-[44px]">
         <div className="sm:flex items-center justify-between">
           <div className="flex items-center justify-between max-lg:gap-5 gap-10">
