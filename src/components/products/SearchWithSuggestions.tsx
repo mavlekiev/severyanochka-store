@@ -13,7 +13,7 @@ const HighlightMatch = ({ text, query }: { text: string; query: string }) => {
     <>
       {parts.map((part, i) =>
         part.toLowerCase() === query.toLowerCase() ? (
-          <mark key={i} className="text-green-100">
+          <mark key={i} className="text-green-100 bg-white-100">
             {part}
           </mark>
         ) : (
