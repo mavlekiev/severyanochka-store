@@ -4,6 +4,8 @@
 
 ## Для полноценнjq работы API dummyjson.com может понадобиться VPN
 
+### Деплой: [https://severyanochka-store.vercel.app/]
+
 ## Реализовано:
 
 ### Страницы
@@ -51,7 +53,7 @@ npm install
 # или
 yarn install
 
-### Деплой: [https://severyanochka-store.vercel.app/]
+
 
 
 
