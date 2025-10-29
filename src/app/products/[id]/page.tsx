@@ -16,6 +16,7 @@ import BasketIcon from "@/components/ui/BasketIcon";
 import UserIcon from "@/components/ui/UserIcon";
 import ArrowRightIcon from "@/components/ui/ArrowRightIcon";
 import ProductSlider from "@/components/products/ProductSlider";
+import ShareButton from "@/components/ui/ShareButton";
 
 const HOVER = "transition-all duration-300 ease-in-out hover:text-orange-100";
 
@@ -84,12 +85,13 @@ export default async function ProductPage({
             {product.reviews.length} отзыва
           </span>
         </div>
-        <button
+        <ShareButton />
+        {/* <button
           className={`flex items-center gap-2 font-medium text-[10px] md:text-xs leading-[1.5] ${HOVER}`}
         >
           <ShareIcon />
           Поделиться
-        </button>
+        </button> */}
         <button
           className={`flex items-center gap-2 font-medium text-[10px] md:text-xs leading-[1.5] ${HOVER}`}
         >
