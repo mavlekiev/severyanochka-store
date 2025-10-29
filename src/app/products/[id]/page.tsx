@@ -2,7 +2,6 @@ import { getProducts, getProductById, getAllCategories } from "@/lib/api";
 import Link from "next/link";
 import Breadcrumbs from "@/components/products/Breadcrumbs";
 import ProductCard from "@/components/products/ProductCard";
-import ShareIcon from "@/components/ui/ShareIcon";
 import RatingStars from "@/components/products/RatingStars";
 import { formatPrice } from "@/utils/formatPrice";
 import ReviewFormSection from "@/components/products/ReviewFormSection";
